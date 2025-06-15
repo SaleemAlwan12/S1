@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/query.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>AuraxTech - Home</title>
+</head>
+<body>
+
+  <!-- Star Background -->
+  <div class="star-background"></div>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="div-logo">
+        <a class="link-logo" href="">
+          <h1 class="header-logo">AuraxTech</h1>
+        </a>
+      </div>
+
+      <div class="div-main-link">
+        <ul class="ul-nav-links">
+          <li><a href="">Cyber Security</a></li>
+          <li><a href="">computer Science </a></li>
+          <li><a href="">Artificial Intelligence</a></li>
+          <li><a href="">Robotics</a></li>
+        </ul>
+      </div>
+
+      <div class="div-sec-link">
+        <ul class="ul-nav-sec-link">
+          <li><a href="">Request To Join</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="main">
+
+    <section class="section-hero">
+      <div class="div-hero">
+        <div class="div-hero-text">
+          <h2 class="hero-title">Welcome To AuraxTech</h2>
+          <p class="hero-description">Smart & secure digital transformation</p>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+    <br>
+      <br>
+  <section style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem;">
+  
+<section style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem;">
+  
+  <!-- الصندوق الأول بمحتوى -->
+  <div class="glass-about image-box">
+    <h2>About Us</h2>
+  </div>
+  <!-- الصندوق الثاني الفاضي -->
+  <div class="glass-about image-box">
+      <h2>Our Services</h2>
+  </div>
+
+
+  <!-- الصندوق الثالث الفاضي -->
+  <div class="glass-about image-box">
+    <h2>Why Choose Us</h2>
+  </div>
+
+
+
+<div id="overlay" class="overlay hidden"></div>
+</section>
+
+
+
+    <section class="section-partners">
+      <h2 class="h2-text-partners">Our Partners</h2>
+      <div class="grid grid--4-cols div-partners">
+        <div class="partner">
+          <img src="Assets/mincrosoft.png" alt="">
+        </div>
+        <div class="partner">
+          <img src="Assets/VMware.png" alt="">
+        </div>
+        <div class="partner">
+          <img src="Assets/google-1.png" alt="">
+        </div>
+        <div class="partner">
+          <img src="Assets/redhat-1.png" alt="">
+        </div>
+      </div>
+    </section>
+
+     <br>
+     
+     
+    <section class="section-our-team">
+
+     
+  <div class="main-our-team-text">
+      <p>Our Team</p>
+  </div>
+
+  <div class="container swiper">
+    <div class="slider-">
+
+      <div class="card-list swiper-wrapper">
+
+        <div class="card-item swiper-slide">
+          <img src="Assets/saleem.png" alt="User Image" class="user-image" data-name="SaleemAlwan" data-profession="Founder & CEO | Owner | Born In Israel| ben gurion university SWE & CS-A-D  linkedin  :  https://www.linkedin.com/in/saleem-alwan-246554294/">
+        
+          
+          <h2 class="user-name">SaleemAlwan</h2>
+          <p class="user-profession">Founder & CEO</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="Assets/adnan Amman.png" alt="User Image" class="user-image" data-name="Adnan Mkahal" data-profession="Full Stack Developer">
+          <h2 class="user-name">Adnan Mkahal</h2>
+          <p class="user-profession">Full Stack Developer</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="Assets/users.png" alt="User Image" class="user-image" data-name="Michael Lee" data-profession="Cybersecurity Lead">
+          <h2 class="user-name">Michael Lee</h2>
+          <p class="user-profession">Cybersecurity Lead</p>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="Assets/users.png" alt="User Image" class="user-image" data-name="Daniel Kim" data-profession="CTO – Head of Engineering">
+          <h2 class="user-name">Daniel Kim</h2>
+          <p class="user-profession">CTO – Head of Engineering</p>
+        </div>
+
+        <!-- المزيد من العناصر ... -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- القائمة الجانبية -->
+  <div class="sidebar" id="sidebar">
+    <button id="closeSidebar" aria-label="Close sidebar">&times;</button>
+    <img id="sidebarImage" src="" alt="User Image" class="sidebar-image">
+    <h3 id="sidebarName">Name</h3>
+    <p id="sidebarProfession">Profession</p>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  
+    </section.net/ript>
+  <script>
+         const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('closeSidebar');
+
+const sidebarImage = document.getElementById('sidebarImage');
+const sidebarName = document.getElementById('sidebarName');
+const sidebarProfession = document.getElementById('sidebarProfession');
+
+document.querySelectorAll('.user-image').forEach(img => {
+  img.addEventListener('click', () => {
+    // جلب بيانات من خصائص data-attributes
+    const name = img.getAttribute('data-name');
+    const profession = img.getAttribute('data-profession');
+    const src = img.getAttribute('src');
+
+    // تعبئة البيانات في القائمة
+    sidebarName.textContent = name;
+    sidebarProfession.textContent = profession;
+    sidebarImage.src = src;
+    sidebarImage.alt = `Image of ${name}`;
+
+    // إظهار القائمة والخلفية
+    sidebar.classList.add('active');
+    overlay.classList.add('active');
+  });
+});
+
+// إغلاق القائمة عند الضغط على زر الإغلاق أو الخلفية
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.classList.remove('active');
+});
+overlay.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+  </script>
+    <script>
+  
+      const swiper = new Swiper('.slider-wrapper', {
+      
+    loop: true,
+  
+        grabCursor: true,
+        spaceBetween: 45,
+  
+        navigation: {
+          nextEl: '.swiper-button-next',
+     
+       prevEl: '.swiper-button-prev',
+        },
+  
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      }); 
+    </script>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="grid grid--5-cols footer-navs">
+      <div class="div-logo-title">
+        <p class="footer-logo-title">AuraxTech</p>
+      </div>
+      <nav class="footer-nav">
+        <p class="footer-text-title">Support</p>
+        <ul class="ul-link-footer">
+          <li><a href="">Contact Support</a></li>
+          <li><a href="">Training & Certification</a></li>
+          <li><a href="">Technical Support</a></li>
+          <li><a href="">EPM SaaS Register / Login</a></li>
+          <li><a href="">Product Security</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <p class="footer-text-title">Resources</p>
+        <ul class="ul-link-footer">
+          <li><a href="">Resource Center</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">CIO Connection</a></li>
+          <li><a href="">CyberArk Blueprint</a></li>
+          <li><a href="">Scan Your Network</a></li>
+          <li><a href="">Marketplace</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <p class="footer-text-title">Partners</p>
+        <ul class="ul-link-footer">
+          <li><a href="">Partner Network</a></li>
+          <li><a href="">Partner Communityexternal</a></li>
+          <li><a href="">Become a Partner</a></li>
+          <li><a href="">Alliance Partner</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <p class="footer-text-title">Company</p>
+        <ul class="ul-link-footer">
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Leadership</a></li>
+          <li><a href="">Board of Directors</a></li>
+          <li><a href="">Newsroom</a></li>
+          <li><a href="">Office Locations</a></li>
+          <li><a href="">Environmental, Social and Governance</a></li>
+          <li><a href="">Trust Center</a></li>
+          <li><a href="">Careers – We're Hiring!</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="div-end-footer">
+      <div class="div-copyright">
+        <p class="footer-copyright">&copy; 2025 AuraxTech – All rights reserved.</p>
+      </div>
+      <div class="div-policy">
+        <ul class="ul-links-policy">
+          <li><a href="">Terms and Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Your Privacy Choices</a></li>
+        </ul>
+      </div>
+      <div class="div-social">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
